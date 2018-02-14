@@ -1,5 +1,6 @@
 import React from 'react';
 import Level from './Level';
+import Buttons from './Buttons';
 import GotchiGIF from './../assets/images/gotchi.gif';
 
 
@@ -18,6 +19,7 @@ function Game() {
        `}</style>
       <div>
         <img src={GotchiGIF} />
+        <Buttons />
       </div>
       <Level />
     </div>

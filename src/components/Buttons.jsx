@@ -1,7 +1,7 @@
 import React from 'react';
 import FeedButton from './FeedButton';
-import MedsButton from './MedsButton';
-import PlayButton from './PlayButton';
+// import MedsButton from './MedsButton';
+// import PlayButton from './PlayButton';
 
 function Buttons() {
   return (
@@ -12,8 +12,6 @@ function Buttons() {
           }
        `}</style>
       <FeedButton />
-      <MedsButton />
-      <PlayButton />
     </div>
   );
 }
