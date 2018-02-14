@@ -8,8 +8,8 @@ function PlayButton() {
             border-style: none;
             width: 60px;
             height: 20px;
-            left: 896px;
-            bottom: 433px;
+            left: 630px;
+            bottom: 102px;
             position: absolute;
             z-index: 1;
             transform: rotate(90deg);

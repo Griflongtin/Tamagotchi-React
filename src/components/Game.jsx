@@ -16,8 +16,11 @@ function Game() {
             justify-content: center;
             align-items: center;
           }
+          .GIFDiv {
+            position: relative;
+          }
        `}</style>
-      <div>
+      <div className="GIFDiv">
         <img src={GotchiGIF} />
         <Buttons />
       </div>

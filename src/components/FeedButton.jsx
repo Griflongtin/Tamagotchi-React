@@ -8,8 +8,8 @@ function FeedButton() {
             border-style: none;
             width: 60px;
             height: 20px;
-            left: 738px;
-            bottom: 433px;
+            left: 472px;
+            bottom: 102px;
             position: absolute;
             z-index: 1;
             transform: rotate(90deg);

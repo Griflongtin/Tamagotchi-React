@@ -8,8 +8,8 @@ function MedsButton() {
             border-style: none;
             width: 60px;
             height: 20px;
-            left: 817px;
-            bottom: 413px;
+            left: 551px;
+            bottom: 82px;
             position: absolute;
             z-index: 1;
             transform: rotate(90deg);
