@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MedsButton() {
+function PlayButton() {
   return (
     <div className="button">
       <style jsx >{`
@@ -8,8 +8,8 @@ function MedsButton() {
             border-style: none;
             width: 60px;
             height: 20px;
-            left: 817px;
-            bottom: 413px;
+            left: 896px;
+            bottom: 433px;
             position: absolute;
             z-index: 1;
             transform: rotate(90deg);
@@ -30,9 +30,9 @@ function MedsButton() {
               background-color: transparent;
             }
        `}</style>
-      <button><span>Meds</span></button>
+      <button><span>Play</span></button>
     </div>
   );
 }
 
-export default MedsButton;
+export default PlayButton;

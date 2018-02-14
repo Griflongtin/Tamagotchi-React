@@ -11,7 +11,6 @@ function FeedButton() {
             left: 738px;
             bottom: 433px;
             position: absolute;
-
             z-index: 1;
             transform: rotate(90deg);
             background-color: transparent;
