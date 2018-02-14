@@ -1,6 +1,6 @@
 import React from 'react';
 import FeedButton from './FeedButton';
-// import MedsButton from './MedsButton';
+import MedsButton from './MedsButton';
 // import PlayButton from './PlayButton';
 
 function Buttons() {
@@ -11,7 +11,12 @@ function Buttons() {
             width: 500px;
           }
        `}</style>
-      <FeedButton />
+      <div className="buttonWaper">
+        <FeedButton />
+      </div>
+      <div className="buttonWaper">
+        <MedsButton />
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FeedButton() {
+function MedsButton() {
   return (
     <div className="button">
       <style jsx >{`
@@ -31,9 +31,9 @@ function FeedButton() {
               background-color: transparent;
             }
        `}</style>
-      <button><span>Feed</span></button>
+      <button><span>Meds</span></button>
     </div>
   );
 }
 
-export default FeedButton;
+export default MedsButton;
