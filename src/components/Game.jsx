@@ -19,12 +19,18 @@ function Game() {
           .GIFDiv {
             position: relative;
           }
+          .levelDiv {
+            position: relative;
+            left: -20px;
+          }
        `}</style>
       <div className="GIFDiv">
         <img src={GotchiGIF} />
         <Buttons />
       </div>
-      <Level />
+      <div className="levelDiv">
+        <Level />
+      </div>
     </div>
   );
 }
