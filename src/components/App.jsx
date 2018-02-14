@@ -5,7 +5,7 @@ import Game from './Game';
 function App() {
   return (
     <div>
-      google
+      app
       <Switch>
         <Route exact path='/' component={ Game } />
       </Switch>
