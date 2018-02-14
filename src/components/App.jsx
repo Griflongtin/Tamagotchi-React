@@ -12,14 +12,10 @@ function App() {
          padding: 0;
        }
        body {
-         font-family: 'Source Sans Pro', sans-serif;
+         background-color: #0052ff;
          width: 100%;
        }
-       button {
-         outline: 0;
-       }
        `}</style>
-      app
       <Switch>
         <Route exact path='/' component={ Game } />
       </Switch>
