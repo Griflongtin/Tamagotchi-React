@@ -13,7 +13,7 @@ class Food extends React.Component {
   }
 
   handleFoodStart() {
-    this.setStart = setInterval(() =>
+    this.setFoodStart = setInterval(() =>
       this.handleFoodCounter(),
     1000
     );
@@ -44,10 +44,10 @@ class Food extends React.Component {
         <span>Food Level</span>
         <br />
         <span className="foodNumber">{(this.state.foodLevel === 0)? 'Died' : this.state.foodLevel}</span>
+        <button onClick={this.handleFoodStart}>Start</button>
       </div>
     );
   }
 }
-// <button onClick={this.handleFoodStart}>Start</button>
 
 export default Food;

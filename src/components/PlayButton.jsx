@@ -1,6 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function PlayButton() {
+function PlayButton(props) {
+  function clickPlayButton(){
+    props.onClickPlayButton();
+  }
   return (
     <div className="button">
       <style jsx >{`
@@ -30,9 +34,13 @@ function PlayButton() {
               background-color: transparent;
             }
        `}</style>
-      <button><span>Play</span></button>
+      <button onClick={clickPlayButton}><span>Play</span></button>
     </div>
   );
 }
+
+PlayButton.propTypes = {
+  onClickPlayButton: PropTypes.func
+};
 
 export default PlayButton;

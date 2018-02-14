@@ -1,6 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function MedsButton() {
+function MedsButton(props) {
+  function clickMedsButton(){
+    props.onClickMedsButton();
+  }
   return (
     <div className="button">
       <style jsx >{`
@@ -30,9 +34,13 @@ function MedsButton() {
               background-color: transparent;
             }
        `}</style>
-      <button><span>Meds</span></button>
+      <button onClick={clickMedsButton}><span>Meds</span></button>
     </div>
   );
 }
+
+MedsButton.propTypes = {
+  onClickMedsButton: PropTypes.func
+};
 
 export default MedsButton;

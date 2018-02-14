@@ -12,7 +12,7 @@ class Bord extends React.Component {
   }
 
   handleBordStart() {
-    this.setStart = setInterval(() =>
+    this.setBordStart = setInterval(() =>
       this.handleBordCounter(),
     1000
     );
@@ -43,10 +43,10 @@ class Bord extends React.Component {
         <span>Bord Level</span>
         <br />
         <span className="bordNumber">{(this.state.bordLevel === 10)? 'Died' : this.state.bordLevel}</span>
+        <button onClick={this.handleBordStart}>Start</button>
       </div>
     );
   }
 }
-// <button onClick={this.handleBordStart}>Start</button>
 
 export default Bord;

@@ -1,6 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function FeedButton() {
+function FeedButton(props) {
+  function clickFeedButton(){
+    props.onClickFeedButton();
+  }
   return (
     <div className="button">
       <style jsx >{`
@@ -30,9 +34,13 @@ function FeedButton() {
               background-color: transparent;
             }
        `}</style>
-      <button><span>Feed</span></button>
+      <button onClick={clickFeedButton}><span>Feed</span></button>
     </div>
   );
 }
+
+FeedButton.propTypes = {
+  onClickFeedButton: PropTypes.func
+};
 
 export default FeedButton;

@@ -5,6 +5,13 @@ import GotchiGIF from './../assets/images/gotchi.gif';
 
 
 function Game() {
+  function FeedButtonPass(){
+    alert('food');
+  }
+  function MedsButtonPass(){
+    alert('Meds');  }
+  function PlayButtonPass(){
+    alert('Play');  }
   return (
     <div className="gameBody">
       <style jsx >{`
@@ -26,7 +33,7 @@ function Game() {
        `}</style>
       <div className="GIFDiv">
         <img src={GotchiGIF} />
-        <Buttons />
+        <Buttons passFeedButton={FeedButtonPass} passMedsButton={MedsButtonPass} passPlayButton={PlayButtonPass} />
       </div>
       <div className="levelDiv">
         <Level />

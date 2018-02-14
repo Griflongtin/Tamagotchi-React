@@ -12,7 +12,7 @@ class Sick extends React.Component {
   }
 
   handleSickStart() {
-    this.setStart = setInterval(() =>
+    this.setSickStart = setInterval(() =>
       this.handleSickCounter(),
     1000
     );
@@ -43,10 +43,10 @@ class Sick extends React.Component {
         <span>Sick Level</span>
         <br />
         <span className="sickNumber">{(this.state.sickLevel === 10)? 'Died' : this.state.sickLevel}</span>
+        <button onClick={this.handleSickStart}>Start</button>
       </div>
     );
   }
 }
-// <button onClick={this.handleSickStart}>Start</button>
 
 export default Sick;
