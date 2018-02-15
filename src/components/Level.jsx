@@ -2,8 +2,10 @@ import React from 'react';
 import Food from './Food';
 import Sick from './Sick';
 import Bord from './Bord';
+import PropTypes from 'prop-types';
 
-function Level() {
+
+function Level(props) {
   return (
     <div className="numberCounterDisplay">
       <style jsx >{`
@@ -15,11 +17,16 @@ function Level() {
             justify-content: space-around;
           }
        `}</style>
-      <Food />
-      <Sick />
-      <Bord />
+      <Food foodLevel={props.foodLevel}/>
+      <Sick sickLevel={props.sickLevel}/>
+      <Bord bordLevel={props.bordLevel}/>
     </div>
   );
 }
+Level.propTypes = {
+  foodLevel: PropTypes.number,
+  sickLevel: PropTypes.number,
+  bordLevel: PropTypes.number
+};
 
 export default Level;
