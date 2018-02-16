@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function FeedButton(props) {
-  function clickFeedButton(){
-    props.onClickFeedButton();
-  }
   return (
     <div className="button">
       <style jsx >{`
@@ -34,7 +31,7 @@ function FeedButton(props) {
               background-color: transparent;
             }
        `}</style>
-      <button onClick={clickFeedButton}><span>Feed</span></button>
+      <button onClick={props.onClickFeedButton}><span>Feed</span></button>
     </div>
   );
 }

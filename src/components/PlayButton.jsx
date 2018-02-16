@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function PlayButton(props) {
-  function clickPlayButton(){
-    props.onClickPlayButton();
-  }
   return (
     <div className="button">
       <style jsx >{`
@@ -34,7 +31,7 @@ function PlayButton(props) {
               background-color: transparent;
             }
        `}</style>
-      <button onClick={clickPlayButton}><span>Play</span></button>
+      <button onClick={props.onClickPlayButton}><span>Play</span></button>
     </div>
   );
 }
