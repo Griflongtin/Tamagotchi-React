@@ -4,7 +4,7 @@
 
 ## Description
 
-_This a game called Tamagotchi. It is a remake of the tamagotchi I build it Angurler 2.Try and keep you animal alive._
+_This a game called Tamagotchi. It is a remake of the tamagotchi I build it Angurlar 2.Try and keep you animal alive._
 
 ## Setup/Installation Requirements
 
